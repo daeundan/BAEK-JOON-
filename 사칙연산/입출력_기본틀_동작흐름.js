@@ -1,9 +1,12 @@
 // 입출력 백준 기본틀
 
+// 동작 흐름: 입력 전체 → 한 번에 메모리에 로드 → 파싱 → 출력
+
 let fs = require("fs");
 // Node.js의 파일 시스템 모듈을 불러옴
 let input = fs.readFileSync("/dev/stdin").toString().split("\n");
 // 표준 입력(stdin) 을 동기 방식으로 읽음  문자열로 변환ㅡ배경롤 만듦
+// 입력을 한 번에 전부 읽음 : 코테/백준 표준
 
 let count = input[0];
 let numbers = [];
