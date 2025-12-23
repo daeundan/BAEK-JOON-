@@ -27,7 +27,7 @@ function addOne(x) {
 rl.on("line", (line) => {
   const arr = line.split(" ");
   console.log("arr", arr);
-  // arr ["2", "4", "8"]
+  // arr ["3", "6", "9"]
 
   //   console.log("arrAddOne", arr.map(addOne));
 
@@ -37,7 +37,7 @@ rl.on("line", (line) => {
   }
 
   console.log("arrNumber", arrNumber);
-  // arrNumber 2, 4, 8
+  // arrNumber 3, 6, 9
   //   for (let i = 0; i < arrNumber.length; i = i + 1) {
   //     console.log("for i", i, arrNumber[i]);
 
@@ -46,42 +46,45 @@ rl.on("line", (line) => {
   //     console.log("for i2", i, arrNumber[i]);
   //   }
   console.log(arrNumber[1]);
-  // 4
-  console.log(arrNumber[2]);
-  // 8
-  console.log(arrNumber[0]);
-  // 2
-
-  console.log(arrNumber[0] + 2);
-
-  // 4
-  arrNumber[0] = arrNumber[0] + 4;
-  // 6을 0번째에 넣는다
-  // arrNumber[0] = 6
-  //    6, 4, 8
-
-  console.log(arrNumber[0]);
   // 6
+  console.log(arrNumber[2]);
+  // 9
+  console.log(arrNumber[0]);
+  // 3
+
+  // 3, 6, 9
+  console.log(arrNumber[0] + 2);
+  // 5
+  // 3 6 9
+  // 무엇을 안해서 착각?
+  arrNumber[0] = arrNumber[0] + 4;
+  // 7을 0번째에 넣는다
+  // arrNumber[0] = 7
+  //   7, 6, 9
+
+  console.log(arrNumber[0]);
+  // 7
+  // 7 6 9
   arrNumber[2] = arrNumber[0] + 4;
-  // 6, 4, 10
-  // 10을 배열 2번째에 넣는다
+  // 7, 6, 11
+  // 배열 2번째에 13을 넣는다
 
   console.log(arrNumber[1]);
-  // 4
+  // 6
   console.log(arrNumber[2]);
 
-  // 10
+  // 11
 
   //   답은
-  // arr ["2", "4", "8"]
-  // arrNumber 2, 4, 8
-  // 4
-  // 8
-  // 2
-  // 4
+  //  arr ["3", "6", "9"]
+  // arrNumber 3, 6, 9
   // 6
-  // 4
-  // 10
+  // 9
+  // 3
+  // 5
+  // 9
+  // 6
+  // 11
 
   //   console.log("arrAddOne", arrAddOne);
 
